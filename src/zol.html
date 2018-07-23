@@ -4,15 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/init.css">
-    <link rel="stylesheet" href="./css/index_top-bar.css">
-    <link rel="stylesheet" href="./css/index_footer.css">
-    <link rel="stylesheet" href="./css/index_rightside.css">
-    <link rel="stylesheet" href="./css/index_m2.css">
-    <link rel="stylesheet" href="./css/index_m3.css">
-    <link rel="stylesheet" href="./css/index_m4.css">
-    <link rel="stylesheet" href="./css/index_m5.css">
+    <link rel="stylesheet" href="./css/index/index.css">
 </head>
 
 <body>
@@ -104,6 +97,12 @@
                     <li><i class="ico5"></i><a href="#">外设<i></i></a></li>
                     <li><i class="ico6"></i><a href="#">智能<i></i></a></li>
                     <div style="height: 76px;background-color: rgb(69, 69, 69);"></div>
+                    <div class="subtype">
+                        <!-- <div class="sub_details">
+                            <a href="javascript:;">智能手环</a><a href="javascript:;">智能手表</a><a href="javascript:;">VR眼镜</a><a href="javascript:;">健康监测</a><a href="javascript:;">智能机器人</a><a href="javascript:;">智能电子秤</a><a href="javascript:;">智能灯</a><a href="javascript:;">智能投影</a><a href="javascript:;">TC VIVE</a>
+                        </div>
+                        <img src="./images/index/ChMkJ1ngYTmIFr2AAABKYNDq9vgAAhNiQJ_hIsAAEp4024"> -->
+                    </div>
                 </ol>
             </div>
         </div>
@@ -437,6 +436,41 @@
     </div>
     <script src="./script/libs/jquery.min.js"></script>
     <script src="./script/js/index_effect.js"></script>
+    <script>
+    ! function() {
+        var aLi = $(".m2_meau li").not("sub_all");
+        var ol = $(".m2_meau .subtype");
+        aLi.hover(function() {
+         var id=$(this).index();
+         var that = $(this);
+         ol.css({display:"block"})
+            $.ajax({
+                dataType: "json",
+                type: "GET",
+                url: "http://10.31.165.18/jingdong/zol/php/index_block.php",
+                data: "id="+id,
+                success: function(msg) {
+                    var arr1 = msg[0];
+                    var path = msg[1][0].path;
+                    console.log(path);
+                    var str = '<div class="sub_details">';
+                    $.each(arr1,function(i,n){
+                       str+="<a href='javascript:;'>"+n[0]+"</a>";
+                    });
+                    str+="<img src=./images/index/"+path+ "></div>"
+                    // console.log(str);
+
+                    ol.html(str);
+                },
+                error: function(msg) {
+                    console.log("数据获取失败")
+                }
+            })
+        },function(){
+            ol.css({display:"none"})
+        });
+    }();
+    </script>
 </body>
 
 </html>

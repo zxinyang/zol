@@ -1,0 +1,50 @@
+.right_side
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index:101;
+    width: 37px;
+
+    background: #2d2d2d;
+
+    div
+    {
+        width: 37px;
+        height: 37px;
+
+        cursor: pointer;
+
+        background: url('../../images/sidebar.png') no-repeat;
+        margin-top:15px;
+    }
+    .sale_tab
+    {
+        background-position: 0 0;
+        margin-top:200px;
+    }
+    .sale_foots
+    {
+        background-position: 0 -74px;
+    }
+    .sale_cart
+    {
+        background-position: 0 -111px;
+    }
+    .sale_ticket{
+    	    background-position: 0 -693px;
+    }
+    .backtop{
+    	position:absolute;
+    	bottom:0;
+    	right:0;
+    	background-position: 0 -185px;
+    	a{
+    		display: block;
+    		height: 37px;
+			color:#fff;
+    	}
+    }
+
+}
