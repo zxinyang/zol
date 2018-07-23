@@ -1,0 +1,42 @@
+.right_side {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 101;
+  width: 37px;
+  background: #2d2d2d;
+}
+.right_side div {
+  width: 37px;
+  height: 37px;
+  cursor: pointer;
+  background: url("../images/sidebar.png") no-repeat;
+  margin-top: 15px;
+}
+.right_side .sale_tab {
+  background-position: 0 0;
+  margin-top: 200px;
+}
+.right_side .sale_foots {
+  background-position: 0 -74px;
+}
+.right_side .sale_cart {
+  background-position: 0 -111px;
+}
+.right_side .sale_ticket {
+  background-position: 0 -693px;
+}
+.right_side .backtop {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-position: 0 -185px;
+}
+.right_side .backtop a {
+  display: block;
+  height: 37px;
+  color: #fff;
+}
+
+/*# sourceMappingURL=index_rightside.css.map */

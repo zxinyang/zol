@@ -1,0 +1,74 @@
+.m5 .wraper {
+  width: 1200px;
+  margin: 0 auto;
+}
+.m5 li {
+  margin-right: 21px;
+  float: left;
+  padding: 5px 10px 0 10px;
+  background: #fff;
+  position: relative;
+}
+.m5 li h3 {
+  overflow: hidden;
+}
+.m5 .coupon {
+  background: #f66;
+  color: #fff;
+  font-size: 24px;
+  margin-right: 10px;
+}
+.m5 .coupon p {
+  font-size: 12px;
+  margin: 14px 0;
+  text-align: center;
+}
+.m5 .coupon a {
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 0;
+  display: block;
+  text-align: center;
+}
+.m5 .all {
+  width: 220px;
+}
+.m5 .all > div {
+  float: left;
+}
+.m5 .price {
+  height: 55px;
+  width: 125px;
+  font-size: 32px;
+  color: #f66;
+  transform: skewX(-15deg);
+}
+.m5 .name span {
+  display: block;
+  font-size: 12px;
+  color: #999;
+}
+.m5 h4 {
+  color: #f66;
+  margin-bottom: 10px;
+}
+.m5 .getcp {
+  text-align: center;
+  border-top: 1px solid #eee;
+  height: 43px;
+  line-height: 43px;
+}
+.m5 .getcp a {
+  color: #f66;
+  font-size: 12px;
+}
+.m5 .ico {
+  position: absolute;
+  top: 0;
+  right: -18px;
+  width: 18px;
+  height: 101px;
+  background: url(../images/m5/m5_ico.png) no-repeat -68px 0;
+}
+
+/*# sourceMappingURL=index_m5.css.map */

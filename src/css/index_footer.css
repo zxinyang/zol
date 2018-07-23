@@ -1,0 +1,31 @@
+.footer {
+  background: #2d2d2d;
+  font: 12px/24px "Microsoft YaHei";
+  color: #666;
+}
+.footer .foot_wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer_nav {
+  padding-top: 20px;
+}
+.footer_nav a {
+  color: #fff;
+  margin: 0 10px;
+}
+
+.footer_us {
+  padding-top: 20px;
+}
+.footer_us a {
+  color: #999;
+  margin: 0 10px;
+}
+
+.foot_other {
+  height: 40px;
+}
+
+/*# sourceMappingURL=index_footer.css.map */

@@ -1,0 +1,107 @@
+.m4 {
+    /*
+		
+	<!-- 
+		ol 398 *151
+		div1   134*116
+			img: 80*80
+		div2 
+			p :134*35
+			 a
+	 -->
+	*/
+}
+.m4 .wraper {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+.m4 .section_tg {
+  padding-top: 20px;
+  margin-bottom: 31px;
+}
+.m4 ul {
+  width: 3650px;
+  overflow: hidden;
+}
+.m4 .turn {
+  width: 95px;
+  margin: 10px auto 0 auto;
+}
+.m4 .turn span {
+  width: 25px;
+  height: 10px;
+  background: #ddd;
+  display: inline-block;
+}
+.m4 ul > li {
+  float: left;
+  padding: 10px 120px 10px 10px;
+  margin: 0 2px;
+  margin-left: 3px;
+  position: relative;
+  background: url("../images/m4/m4_1.png") #fff6dd no-repeat right center;
+}
+.m4 ul > li p {
+  height: 50px;
+  line-height: 50px;
+}
+.m4 ul > li h4 {
+  width: 266px;
+}
+.m4 ol {
+  position: absolute;
+  width: 398px;
+  top: 0;
+  left: -1px;
+  height: 150px;
+  overflow: hidden;
+  background: rgba(51, 51, 51, 0.89);
+  opacity: 0.9;
+  top: 100%;
+}
+.m4 ol .shaw_1 {
+  margin-left: 20px;
+  display: inline-block;
+  float: left;
+}
+.m4 ol a {
+  color: #fff;
+}
+.m4 ol img {
+  height: 80%;
+  width: 80%;
+  vertical-align: middle;
+  position: absolute;
+  top: 11%;
+  left: 11%;
+}
+.m4 ol div {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  background: #fff;
+  margin: 20px 60px 0 0;
+  border-radius: 40px;
+}
+.m4 ol .shaw_2 {
+  margin-left: 170px;
+}
+.m4 ol .shaw_2 span {
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+}
+.m4 ol .shaw_2 .tg {
+  background: red;
+  width: 80px;
+  text-align: center;
+  border-radius: 7px;
+}
+.m4 ol .shaw_2 .tg a {
+  color: #fff;
+}
+
+/*# sourceMappingURL=index_m4.css.map */

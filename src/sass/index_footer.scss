@@ -1,0 +1,43 @@
+@mixin box_color($f: Arial, $s:12px, $w:normal, $c:#ddd) {
+    font : {
+        family: $f;
+        size: $s;
+        weight: $w;
+    }
+    ;
+
+    color: $c;
+    ;
+}
+
+.footer {
+    background: #2d2d2d; // a{color:#fff;}
+    font: 12px/24px "Microsoft YaHei";
+    color:#666;
+   	.foot_wrap{
+   		width:1200px;
+   		margin:0 auto;
+   	}
+
+}
+
+
+.footer_nav {
+	padding-top:20px;
+    a {
+        color: #fff;
+        margin: 0 10px;
+    }
+}
+.footer_us{
+	padding-top:20px;
+	a{
+		color:#999;
+        margin: 0 10px;
+		
+	}
+
+}
+.foot_other{
+	height:40px;
+}

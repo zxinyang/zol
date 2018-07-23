@@ -1,0 +1,100 @@
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.top_bar {
+    padding: 10px 0;
+    .logo {
+        float: left;
+        a {
+            display: block;
+            color: #666;
+        }
+    }
+
+    img {
+        display: block;
+        width: 130px;
+        height: 60px;
+        float: left;
+    }
+    p {
+        float: left;
+        margin: 10px 0 0 20px;
+        padding: 10px 0 10px 20px;
+        border-left: 1px solid #ddd;
+    }
+    .register_bar {
+        float: right;
+        padding: 30px;
+        a {
+            color: #c00;
+        }
+    }
+}
+
+.main {
+    margin-top: 20px;
+    .login_img {
+        float: left;
+        a {
+            display: block;
+        }
+        img {
+            display: block;
+            width: 520px;
+            height: 350px;
+        }
+    }
+    .user_enter {
+        float: left;
+        background: #fff;
+        padding: 0 85px;
+        width: 275px;
+        position: relative;
+        
+
+    }
+    .choose {
+        h3 {
+            display: block;
+            color: #333;
+            font: 18px/35px "Microsoft YaHei";
+            font-size: 20px;
+            float: left;
+            width: 50%;
+            border-bottom: 2px solid #ddd;
+            text-align: center;
+            padding-top: 20px;
+        }
+    }
+    form {
+        padding-top: 20px;
+    }
+    input {
+        width: 270px;
+        height: 27px;
+        padding: 5px 0;
+        border: 1px solid #ccc;
+        margin-bottom: 15px;
+        text-indent: 14px;
+
+    }
+    .submit{
+        background:#db2e2e;
+        border:1px solid #db2e2e;
+        width:272px;
+        height: 40px;
+        color:#fff;
+        margin-top:40px;
+    }
+    .zshop{
+        padding-bottom: 70px;
+        /*position: absolute;*/
+    }
+    .seller{
+         padding-bottom: 70px;
+         /*position: absolute;*/
+    }
+}

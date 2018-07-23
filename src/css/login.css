@@ -1,0 +1,96 @@
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.top_bar {
+  padding: 10px 0;
+}
+.top_bar .logo {
+  float: left;
+}
+.top_bar .logo a {
+  display: block;
+  color: #666;
+}
+.top_bar img {
+  display: block;
+  width: 130px;
+  height: 60px;
+  float: left;
+}
+.top_bar p {
+  float: left;
+  margin: 10px 0 0 20px;
+  padding: 10px 0 10px 20px;
+  border-left: 1px solid #ddd;
+}
+.top_bar .register_bar {
+  float: right;
+  padding: 30px;
+}
+.top_bar .register_bar a {
+  color: #c00;
+}
+
+.main {
+  margin-top: 20px;
+}
+.main .login_img {
+  float: left;
+}
+.main .login_img a {
+  display: block;
+}
+.main .login_img img {
+  display: block;
+  width: 520px;
+  height: 350px;
+}
+.main .user_enter {
+  float: left;
+  background: #fff;
+  padding: 0 85px;
+  width: 275px;
+  position: relative;
+}
+.main .choose h3 {
+  display: block;
+  color: #333;
+  font: 18px/35px "Microsoft YaHei";
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  border-bottom: 2px solid #ddd;
+  text-align: center;
+  padding-top: 20px;
+}
+.main form {
+  padding-top: 20px;
+}
+.main input {
+  width: 270px;
+  height: 27px;
+  padding: 5px 0;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  text-indent: 14px;
+}
+.main .submit {
+  background: #db2e2e;
+  border: 1px solid #db2e2e;
+  width: 272px;
+  height: 40px;
+  color: #fff;
+  margin-top: 40px;
+}
+.main .zshop {
+  padding-bottom: 70px;
+  /*position: absolute;*/
+}
+.main .seller {
+  padding-bottom: 70px;
+  /*position: absolute;*/
+}
+
+/*# sourceMappingURL=login.css.map */

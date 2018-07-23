@@ -1,0 +1,38 @@
+$barA:#36c;
+
+
+html,
+body,
+p,
+ol,
+li,
+ul,
+h1,h2,h3,h4,h5,h6,
+dd,dl,dt,
+form {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body{
+	background: #f7f7f7;
+}
+input,a {
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+.clear:after{
+	display:block;
+	content:"";
+	height: 0;
+	visibility:hidden;
+	clear:both;
+}

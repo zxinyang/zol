@@ -1,0 +1,79 @@
+.top_bar {
+    .mid_bar {
+        width: 960px;
+        margin: 0 auto;
+    }
+}
+
+.main_wrap {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.logo_bar {
+    margin: 20px 0;
+
+    img {
+        float: left;
+        display: block;
+        width: 130px;
+        height: 60px;
+    }
+    ul {
+        float: right;
+        width: 500px;
+        padding-top: 15px;
+        margin-right: -29px;
+    }
+    li {
+        float: left;
+        padding: 7px 20px 7px 20px;
+        background: url("../images/cart/step-bg.png") no-repeat;
+    }
+    .joincart {
+        background-position: 100% -37px;
+        background-color: #e02d2d;
+        color: #fff;
+    }
+    .order,
+    .pay,
+    .confirm {
+        background-position: 100% -74px;
+        background-color: #e6e6e6;
+        color: #666;
+    }
+    .comment {
+        background: none;
+        color: #666;
+        background-color: #e6e6e6;
+    }
+}
+
+.cart_status {
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 12px;
+    em {
+        font-style: normal;
+    }
+}
+
+.total {
+    font-size: 12px;
+    text-align: right;
+    i {
+        font-style: normal;
+        font-size: 14px;
+        color: #ff0000;
+        ;
+    }
+    span {
+        display: inline-block;
+        background-color: #f8a200;
+        color: #fff;
+        padding: 2px;
+        border-radius: 4px;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+}
