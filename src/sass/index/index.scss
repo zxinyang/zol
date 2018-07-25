@@ -6,3 +6,69 @@
 @import  "index_m51";
 @import  "index_rightside1";
 @import  "index_top-bar1";
+
+.wrap{
+		width:1200px;
+		margin:0 auto;
+	}
+
+.zhixuan{
+	h3{
+		font: 22px/1.5 "Microsoft YaHei";
+		margin:40px 0  12px 0;
+		padding-left:40px;
+		background: url(../../images/index/blocks.png) no-repeat -138px -345px;
+	}
+
+	img{
+		display:block;
+	    width: 100%;
+	}
+}
+.hovers{
+	margin-top:20px;
+	margin-bottom:20px;
+    .section p {
+        height: 40px;
+    }
+
+    .section img {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+
+    .section li {
+        width: 200px;
+        height: 286px;;
+        float: left;
+
+        padding: 20px 15px;
+        background: #fff;
+        margin-right: 10px;
+    }
+
+    .section a {
+        display: block;
+        text-align: center;
+        color: #333;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .shadow {
+        moz-box-shadow: 1px 1px 4px #ccc, -1px 1px 10px #ccc;
+        /*firefox*/
+        -webkit-box-shadow: 1px 1px 4px #ccc, -1px 1px 10px #ccc;
+        /*safari或chrome*/
+        box-shadow: 1px 1px 4px #ccc, -1px 1px 10px #ccc;
+        /*opera或ie9*/
+    }
+
+    .section p {
+        text-align: center;
+        padding-top: 20px;
+        height: 30px;
+    }
+
+}

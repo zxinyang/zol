@@ -1,4 +1,30 @@
 .m4 {
+    position: relative;
+    .btn_left,
+    .btn_right {
+        position: absolute;
+        margin-top: -25px;
+        top: 50%;
+        width: 30px;
+        height: 50px;
+        z-index: 102;
+        border:0;
+        display: none;
+        background-color: transparent;
+        background:url("../../images/zol-home-icons.png") no-repeat; 
+    }
+    .btn_left {
+        left: 126px;
+        padding-right:30px;
+        background-position:8px 8px;
+    }
+    .btn_right {
+        right: 123px;
+        padding-left:30px;
+        background-position: -26px 8px;
+
+    }
+
     .wraper {
         width: 1200px;
         margin: 0 auto;
@@ -6,33 +32,73 @@
         position: relative;
     }
     .section_tg {
-        padding-top: 20px;
-        margin-bottom: 31px;
+        height: 38px;
+        line-height: 38px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding-left: 40px;
+        font-size: 18px;
+        background: url("../../images/index/blocks.png") no-repeat -137px 3px;
+    }
+    h4 {
+        font: 22px/1.5 "Microsoft YaHei";
+        em {
+            font-size: 12px;
+            color: #666;
+            padding-left: 20px;
+        }
     }
     ul {
-        width: 3650px;
+        width: 6200px;
         overflow: hidden;
+        margin-left: -1200px;
     }
     .turn {
         width: 95px;
-
         margin: 10px auto 0 auto;
         span {
             width: 25px;
             height: 10px;
-            background: #ddd;
+            background: #fff;
             display: inline-block;
+
+        }
+        span:nth-of-type(1){
+            background: red;
         }
     }
+
+    ul>li:nth-of-type(3n) {
+        background-color: #fff6dd;
+    }
+    ul>li:nth-of-type(3n+1) {
+        background-color: #ffe5e5;
+    }
+    ul>li:nth-of-type(3n+2) {
+        background-color: #e3f9ff;
+    }
+
     ul>li {
+        position: relative;
         float: left;
-        padding: 10px 120px 10px 10px;
-       
-        margin: 0 2px;
+        padding: 24px 120px 24px 10px;
+
+        margin-right: 2px;
+        overflow: hidden;
         margin-left: 3px;
         position: relative;
-        background: url("../../images/m4/m4_1.png") #fff6dd no-repeat right center;
+        /*background: url("../../images/m4/m4_1.png") no-repeat right center;*/
+        background-repeat: no-repeat;
+        background-position: right center;
 
+        >img {
+            display: block;
+            position: absolute;
+            top: 17px;
+            right: 10px;
+            width: 120px;
+            height: 120px;
+        }
 
 
         p {
@@ -52,7 +118,7 @@
         overflow: hidden;
         background: rgba(51, 51, 51, .89);
         opacity: 0.9;
-        top:100%;
+        top: 100%;
         .shaw_1 {
             margin-left: 20px;
             display: inline-block;
@@ -62,12 +128,12 @@
             color: #fff;
         }
         img {
-            height: 80%;
-            width: 80%;
+            height: 100%;
+            width: 100%;
             vertical-align: middle;
             position: absolute;
-            top: 11%;
-            left: 11%;
+            top: 0;
+            left: 0;
         }
         div {
             position: relative;
@@ -75,7 +141,7 @@
             width: 80px;
             background: #fff;
             margin: 20px 60px 0 0;
-            border-radius: 40px;
+            /*border-radius: 40px;*/
         }
 
         .shaw_2 {
@@ -87,15 +153,14 @@
                 color: #fff;
             }
             .tg {
-                background:red;
-            	width: 80px;
-            	text-align: center;
-            	border-radius: 7px;
+                background: red;
+                width: 80px;
+                text-align: center;
+                border-radius: 7px;
                 a {
                     color: #fff;
                 }
             }
         }
     }
-
 }

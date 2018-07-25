@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .footer {
   background: #2d2d2d;
   font: 12px/24px "Microsoft YaHei";
@@ -176,12 +177,15 @@
 .m3 {
   position: relative;
   overflow: hidden;
+  height: 400px;
 }
 .m3 a {
   display: block;
   height: 400px;
   text-align: center;
-  position: relative;
+  /*position: relative;*/
+  position: absolute;
+  width: 100%;
 }
 .m3 img {
   position: absolute;
@@ -195,6 +199,7 @@
   bottom: 10px;
   right: 50%;
   z-index: 10;
+  cursor: pointer;
 }
 .m3 ul li {
   width: 10px;
@@ -204,6 +209,9 @@
   display: inline-block;
   margin-left: 10px;
 }
+.m3 .first {
+  background: red;
+}
 .m3 .left, .m3 .right {
   position: absolute;
   width: 62px;
@@ -211,16 +219,43 @@
   z-index: 1;
   top: 50%;
   margin-top: -48px;
+  background: url("../../images/m3/arrow.png") no-repeat;
 }
 .m3 .left {
   left: 95px;
-  background: url("../../images/m3/left.png") no-repeat center center;
+  background-position: left -94px;
 }
 .m3 .right {
   right: 95px;
-  background: url("../../images/m3/right.png") no-repeat center center;
+  background-position: left top;
 }
 
+.m4 {
+  position: relative;
+}
+.m4 .btn_left,
+.m4 .btn_right {
+  position: absolute;
+  margin-top: -25px;
+  top: 50%;
+  width: 30px;
+  height: 50px;
+  z-index: 102;
+  border: 0;
+  display: none;
+  background-color: transparent;
+  background: url("../../images/zol-home-icons.png") no-repeat;
+}
+.m4 .btn_left {
+  left: 126px;
+  padding-right: 30px;
+  background-position: 8px 8px;
+}
+.m4 .btn_right {
+  right: 123px;
+  padding-left: 30px;
+  background-position: -26px 8px;
+}
 .m4 .wraper {
   width: 1200px;
   margin: 0 auto;
@@ -228,12 +263,26 @@
   position: relative;
 }
 .m4 .section_tg {
-  padding-top: 20px;
-  margin-bottom: 31px;
+  height: 38px;
+  line-height: 38px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-left: 40px;
+  font-size: 18px;
+  background: url("../../images/index/blocks.png") no-repeat -137px 3px;
+}
+.m4 h4 {
+  font: 22px/1.5 "Microsoft YaHei";
+}
+.m4 h4 em {
+  font-size: 12px;
+  color: #666;
+  padding-left: 20px;
 }
 .m4 ul {
-  width: 3650px;
+  width: 6200px;
   overflow: hidden;
+  margin-left: -1200px;
 }
 .m4 .turn {
   width: 95px;
@@ -242,16 +291,40 @@
 .m4 .turn span {
   width: 25px;
   height: 10px;
-  background: #ddd;
+  background: #fff;
   display: inline-block;
 }
+.m4 .turn span:nth-of-type(1) {
+  background: red;
+}
+.m4 ul > li:nth-of-type(3n) {
+  background-color: #fff6dd;
+}
+.m4 ul > li:nth-of-type(3n+1) {
+  background-color: #ffe5e5;
+}
+.m4 ul > li:nth-of-type(3n+2) {
+  background-color: #e3f9ff;
+}
 .m4 ul > li {
+  position: relative;
   float: left;
-  padding: 10px 120px 10px 10px;
-  margin: 0 2px;
+  padding: 24px 120px 24px 10px;
+  margin-right: 2px;
+  overflow: hidden;
   margin-left: 3px;
   position: relative;
-  background: url("../../images/m4/m4_1.png") #fff6dd no-repeat right center;
+  /*background: url("../../images/m4/m4_1.png") no-repeat right center;*/
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+.m4 ul > li > img {
+  display: block;
+  position: absolute;
+  top: 17px;
+  right: 10px;
+  width: 120px;
+  height: 120px;
 }
 .m4 ul > li p {
   height: 50px;
@@ -280,12 +353,12 @@
   color: #fff;
 }
 .m4 ol img {
-  height: 80%;
-  width: 80%;
+  height: 100%;
+  width: 100%;
   vertical-align: middle;
   position: absolute;
-  top: 11%;
-  left: 11%;
+  top: 0;
+  left: 0;
 }
 .m4 ol div {
   position: relative;
@@ -293,7 +366,7 @@
   width: 80px;
   background: #fff;
   margin: 20px 60px 0 0;
-  border-radius: 40px;
+  /*border-radius: 40px;*/
 }
 .m4 ol .shaw_2 {
   margin-left: 170px;
@@ -579,6 +652,63 @@
   height: 20px;
   top: 7px;
   background-position: 0 -211px;
+}
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.zhixuan h3 {
+  font: 22px/1.5 "Microsoft YaHei";
+  margin: 40px 0  12px 0;
+  padding-left: 40px;
+  background: url(../../images/index/blocks.png) no-repeat -138px -345px;
+}
+.zhixuan img {
+  display: block;
+  width: 100%;
+}
+
+.hovers {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.hovers .section p {
+  height: 40px;
+}
+.hovers .section img {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.hovers .section li {
+  width: 200px;
+  height: 286px;
+  float: left;
+  padding: 20px 15px;
+  background: #fff;
+  margin-right: 10px;
+}
+.hovers .section a {
+  display: block;
+  text-align: center;
+  color: #333;
+  overflow: hidden;
+  position: relative;
+}
+.hovers .shadow {
+  moz-box-shadow: 1px 1px 4px #ccc, -1px 1px 10px #ccc;
+  /*firefox*/
+  -webkit-box-shadow: 1px 1px 4px #ccc, -1px 1px 10px #ccc;
+  /*safari或chrome*/
+  box-shadow: 1px 1px 4px #ccc, -1px 1px 10px #ccc;
+  /*opera或ie9*/
+}
+.hovers .section p {
+  text-align: center;
+  padding-top: 20px;
+  height: 30px;
 }
 
 /*# sourceMappingURL=index.css.map */

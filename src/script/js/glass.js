@@ -89,4 +89,24 @@
         $.extend({glass:run});
         // 之后调用init
     }
+
+    // function Lunbo(left,right,box,proto){
+    //     this.leftbox = left;
+    //     this.rightbox = right;
+    //     this.box = box;
+    //     this.proto = proto;
+
+    // }
+    // Lunbo.prototype = {
+    //     constructor:Lunbo,
+    //     left:function(){
+    //         $(this.leftbox).css({backgroundColor:"rgb()"})
+    //     },
+    //     right:function(){
+
+    //     },
+    //     init:function(){
+
+    //     }
+    // }
 }(jQuery);

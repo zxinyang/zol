@@ -11,6 +11,10 @@ form {
   margin: 0;
 }
 
+h1, h2, h3, h4, h5, h6, i, em, strong, b {
+  font-style: normal;
+}
+
 li {
   list-style: none;
 }
@@ -19,12 +23,16 @@ body {
   background: #f7f7f7;
 }
 
-input, a {
+input, a, button {
   outline: none;
 }
 
 a {
   text-decoration: none;
+}
+
+img {
+  border: 0;
 }
 
 .clear:after {
