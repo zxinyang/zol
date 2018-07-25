@@ -2,24 +2,24 @@
 ! function($) {
     //banner数据
     // $.ajax({
-    // 	url:'php/banner.php',
-    // 	dataType:'json'
+    //  url:'php/banner.php',
+    //  dataType:'json'
     // }).done(function(bannerdata){
-    // 	$.each(bannerdata,function(index,value){
-    // 		var $bannerstr='<ul>';
+    //  $.each(bannerdata,function(index,value){
+    //      var $bannerstr='<ul>';
 
-    // 	});
+    //  });
     // });
 
     //lunbo数据
     // $.ajax({
-    // 	url:'php/banner.php',
-    // 	dataType:'json'
+    //  url:'php/banner.php',
+    //  dataType:'json'
     // }).done(function(bannerdata){
-    // 	$.each(bannerdata,function(index,value){
-    // 		var $bannerstr='<ul>';
+    //  $.each(bannerdata,function(index,value){
+    //      var $bannerstr='<ul>';
 
-    // 	});
+    //  });
     // });
     function lunbo(left, right, box, dots) {
         return new Lunbo(left, right, box, dots).init();
@@ -105,27 +105,27 @@
     }
 
 
-    function Tab(left, right, mox,positions, obj) {
+    function Tab(left, right, mox, positions, obj) {
         this.left = left;
         this.right = right;
         this.mox = mox;
         this.obj = obj;
     }
     Tab.prototype = {
-    	constructor:Tab,
+        constructor: Tab,
         moveleft: function() {
 
         },
         moveright: function() {
 
         },
-        init: function(){
-        	this.left.on("click",function(){
+        init: function() {
+            this.left.on("click", function() {
 
-        	})
-        	this.right.on("click",function(){
+            })
+            this.right.on("click", function() {
 
-        	})
+            })
         }
     }
 
@@ -144,6 +144,32 @@
 }(jQuery);
 
 ! function() {
-    //小效果
+    var aLi = $(".hovers .section li:not(:first)");
+    console.log(aLi);
+    //本来可以使用target后查找下面的img的，但是发现移动的非常快，就直接找到了img,有时又是li。
+    // var aImg = $(".hovers .section img:not");
+    var aImg = aLi.find("img");
+    console.log(aImg);
+    aLi.each(function() {
 
+        var that = aImg.eq($(this).index() - 1);
+        var a = that.parent();
+        a.height(a.height());
+        $(this).hover(function(ev) {
+            aLi.eq($(this).index() - 1).addClass("shadow");
+            that.stop().animate({
+                width: a.width() * 1.1,
+                top: "-5%",
+                left: "-5%"
+            })
+        }, function() {
+            aLi.eq($(this).index() - 1).removeClass("shadow");
+            that.stop().animate({
+                width: "100%",
+                top: 0,
+                left: 0
+
+            })
+        })
+    })
 }(jQuery);

@@ -1,33 +1,34 @@
 @charset "utf-8";
-@import  "index_footer1";
-@import  "index_m21";
-@import  "index_m31";
-@import  "index_m41";
-@import  "index_m51";
-@import  "index_rightside1";
-@import  "index_top-bar1";
+@import "index_footer1";
+@import "index_m21";
+@import "index_m31";
+@import "index_m41";
+@import "index_m51";
+@import "index_rightside1";
+@import "index_top-bar1";
 
-.wrap{
-		width:1200px;
-		margin:0 auto;
-	}
-
-.zhixuan{
-	h3{
-		font: 22px/1.5 "Microsoft YaHei";
-		margin:40px 0  12px 0;
-		padding-left:40px;
-		background: url(../../images/index/blocks.png) no-repeat -138px -345px;
-	}
-
-	img{
-		display:block;
-	    width: 100%;
-	}
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
 }
-.hovers{
-	margin-top:20px;
-	margin-bottom:20px;
+
+.zhixuan {
+    h3 {
+        font: 22px/1.5 "Microsoft YaHei";
+        margin: 40px 0 12px 0;
+        padding-left: 40px;
+        background: url(../../images/index/blocks.png) no-repeat -138px -345px;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+.hovers {
+    margin-top: 20px;
+    margin-bottom: 20px;
     .section p {
         height: 40px;
     }
@@ -40,7 +41,8 @@
 
     .section li {
         width: 200px;
-        height: 286px;;
+        height: 286px;
+        ;
         float: left;
 
         padding: 20px 15px;
@@ -70,5 +72,70 @@
         padding-top: 20px;
         height: 30px;
     }
+
+    h3 {
+        padding-left: 40px;
+        font: 22px/1.5 "Microsoft YaHei";
+        margin: 40px 0 10px 0;
+        background: url(../../images/index/blocks.png) no-repeat -138px -125px;
+        span {
+            font-size: 14px;
+            color: #666;
+            padding-left: 20px;
+        }
+    }
+}
+
+.m6 {
+    .wrap {
+        width: 1200px;
+        margin: 0 auto;
+
+    }
+    h3 {
+        padding-left: 40px;
+        font: 22px/1.5 "Microsoft YaHei";
+        margin: 40px 0 10px 0;
+        background: url(../../images/index/blocks.png) no-repeat -142px -388px;
+    }
+    .left {
+        width: 600px;
+    	float:left;
+        li {
+            float: left;
+            padding: 10px 14px;
+            background: #fff;
+            position: relative;
+            border-bottom: 1px solid #f7f7f7;;
+        }
+        span{
+        	border-left:1px solid #ddd;
+        	height: 40px;
+        	vertical-align: middle;
+        	display: block;
+        	position: absolute;
+        	top:20px;
+        	right: 0;
+        }
+    }
+    .right{
+    	width:590px;
+    	margin-left:10px;
+    	height:570px;
+    	float:left;
+
+    }
+    .rg_top{
+    	background-color: #e78c94;
+    	color:#fff;
+    	ul{
+    		padding-right:20px;
+    	}
+    	li{
+    		float: right;
+    		padding:10px 5px;
+    	}
+    }
+	
 
 }

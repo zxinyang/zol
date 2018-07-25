@@ -661,7 +661,7 @@
 
 .zhixuan h3 {
   font: 22px/1.5 "Microsoft YaHei";
-  margin: 40px 0  12px 0;
+  margin: 40px 0 12px 0;
   padding-left: 40px;
   background: url(../../images/index/blocks.png) no-repeat -138px -345px;
 }
@@ -709,6 +709,65 @@
   text-align: center;
   padding-top: 20px;
   height: 30px;
+}
+.hovers h3 {
+  padding-left: 40px;
+  font: 22px/1.5 "Microsoft YaHei";
+  margin: 40px 0 10px 0;
+  background: url(../../images/index/blocks.png) no-repeat -138px -125px;
+}
+.hovers h3 span {
+  font-size: 14px;
+  color: #666;
+  padding-left: 20px;
+}
+
+.m6 .wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+.m6 h3 {
+  padding-left: 40px;
+  font: 22px/1.5 "Microsoft YaHei";
+  margin: 40px 0 10px 0;
+  background: url(../../images/index/blocks.png) no-repeat -142px -388px;
+}
+.m6 .left {
+  width: 600px;
+  float: left;
+}
+.m6 .left li {
+  float: left;
+  padding: 10px 14px;
+  background: #fff;
+  position: relative;
+  border-bottom: 1px solid #f7f7f7;
+}
+.m6 .left span {
+  border-left: 1px solid #ddd;
+  height: 40px;
+  vertical-align: middle;
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+.m6 .right {
+  width: 590px;
+  margin-left: 10px;
+  height: 570px;
+  float: left;
+}
+.m6 .rg_top {
+  background-color: #e78c94;
+  color: #fff;
+}
+.m6 .rg_top ul {
+  padding-right: 20px;
+}
+.m6 .rg_top li {
+  float: right;
+  padding: 10px 5px;
 }
 
 /*# sourceMappingURL=index.css.map */
