@@ -163,6 +163,7 @@ body {
         visibility: hidden;
     }
     .sdiv {
+        z-index: 1000;
         position: relative;
         overflow: hidden;
         position: absolute;

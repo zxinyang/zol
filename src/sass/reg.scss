@@ -101,6 +101,7 @@ form {
         padding: 10px 0;
         width: 220px;
     }
+
     .tips {
         padding-left: 110px;
         /*font-size:12px;*/
@@ -123,17 +124,15 @@ form {
         background-position: -155px -162px;
     }
 
-   
+
     #codes {
         display: inline-block;
         vertical-align: middle;
-
     }
     #changecode {
         display: inline-block;
         vertical-align: middle;
         font-size: 10px;
-
     }
     #agree {
         width: 20px;
@@ -153,5 +152,7 @@ form {
     .submit {
         margin: 0 100px;
         width: 228px;
+        padding: 10px 0;
+        width: 220px;
     }
 }
