@@ -444,15 +444,24 @@
             </div>
             <div class="right">
                 <div class="rg_top">
-                    <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <ul class="clear">
+                    <li>彩电</li>
+                    <li>冰箱</li>
+                    <li>洗衣机</li>
+                    <li>厨卫</li>
+                    <li>小家电</li>
                 </ul>
                 </div>
-                <div class="rg_main"></div>
+                <div class="rg_main">
+                    <ol class="clear">
+                        <li><a href="javascript:;"><img src="./images/m6/ChMkJ1rEfNeIBHfwAAD55rbKMzoAAnWIAFP_rAAAPn-538.jpg" alt=""></a><p>创维  32X3  32英寸 窄边蓝光高清节能平板液晶电视机（黑色）</p><a href="javascript">¥999.00</a></li>
+                        <li><a href="javascript:;"><img src="./images/m6/ChMkJ1rEi1qIWNMtAAHGQcdrWuIAAnWTAPX29AAAcZZ008.jpg" alt=""></a><p>创维  50M9 50英寸 人工智能HDR 4K超高清 互联网液晶电视机</p><a href="javascript">¥2499.00</a></li>
+                        <li><a href="javascript:;"><img src="./images/m6/ChMkJlqroRKIHa9fAAHxneGavz8AAmxpAIzioUAAfG1194.jpg" alt=""></a><p>创维  55V8E 55英寸 人工智能4色HDR 4K超高清智能网络液晶电视机</p><a href="javascript">¥999.00</a></li>
+                        <li><a href="javascript:;"><img src="./images/m6/ChMkJ1rEgwGIOvJXAAINLw3UuM8AAnWMgPbqAwAAg1H313.jpg" alt=""></a><p>TCL电视 D32A810 32英寸高清 八核观影王 网络智能LED液晶电视</p><a href="javascript">¥1399.00</a></li>
+                        <li><a href="javascript:;"><img src="./images/m6/ChMkJlrEiciIDH6qAAJAATkl7sUAAnWRwPbrfgAAkAZ380.jpg" alt=""></a><p>创维  32X3  32英寸 窄边蓝光高清节能平板液晶电视机（黑色）</p><a href="javascript">¥999.00</a></li>
+                        <li><a href="javascript:;"><img src="./images/m6/ChMkJlqrl3GIS4A-AAFbCxVnpa4AAmxmAOG97gAAVsj714.jpg" alt=""></a><p>创维  32X3  32英寸 窄边蓝光高清节能平板液晶电视机（黑色）</p><a href="javascript">¥999.00</a></li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
@@ -465,6 +474,17 @@
             <a href="#"></a>
         </div>
     </div>
+    <div class="louti">
+        <ul>
+            <li><a href="javascript:;">团购</a></li>
+            <li><a href="javascript:;">领券中心</a></li>
+            <li><a href="javascript:;">Z智选</a></li>
+            <li><a href="javascript:;">品牌精选</a></li>
+            <li><a href="javascript:;">家电优选</a></li>
+            <li class="last"><a href="javascript:;">回到顶部</a></li>
+        </ul>
+    </div>
+
     <div class="footer">
         <div class="foot_wrap">
             <div class="footer_nav">
@@ -492,7 +512,8 @@
     ! function() {
         var aLi = $(".m2_meau li").not(".sub_all");
         var ol = $(".m2_meau .subtype");
-        aLi.hover(function() {
+        var timer;
+        aLi.on("mouseover",function() {
             var id = $(this).index();
             var that = $(this);
             ol.css({ display: "block" })
@@ -510,16 +531,40 @@
                     });
                     str += "<img src=./images/index/" + path + "></div>"
                     // console.log(str);
-
                     ol.html(str);
                 },
                 error: function(msg) {
-                    console.log("数据获取失败")
+                    console.log("数据获取失败");
                 }
             })
-        }, function() {
-            ol.css({ display: "none" })
+            try{
+                clearTimeout(timer)
+            }
+            catch(e){}
         });
+        
+        function disNone(){
+           var  timer = setTimeout(function(){
+                 ol.css({ display: "none" })
+            },200)
+           return timer;
+        }
+
+        function disBlock(){
+            ol.css({ display: "block" })
+        }
+        aLi.on("mouseout",function(){
+            timer = disNone();
+        });
+        
+
+        ol.hover(function(){
+            ol.css({display:"block"})
+            clearTimeout(timer);
+        },function(){
+          timer = disNone();
+        })
+
     }();
 
     // 给团购的板块添加图片
@@ -545,10 +590,7 @@
 
                             var index = $(this).index();
 
-                            console.log($(this).index())
-                            if ($(this).index() == 9) {
-                                console.log($(this));
-                            }
+                           
                             $(this).find(">div h4").html(msg[index][0]);
                             $(this).find(">div p").html("￥" + msg[index][1]);
                             $(this).children("img").attr({ src: "./images/m4/" + msg[index][2] });
@@ -561,7 +603,6 @@
 
                         var lastClone = aLi.slice(6, 9).clone();
                         var startClone = aLi.slice(0, 3).clone();
-                        console.log(lastClone)
                         $(lastClone).prependTo(".m4 ul");
                         $(startClone).appendTo(".m4 ul");
                     }
@@ -629,7 +670,6 @@
 
                     }
                     bgColor(index - 1);
-                    console.log(index)
 
                 }
 
@@ -687,8 +727,7 @@
             }();
         })
 
-
-        ! function() {
+    ! function() {
 
             var leftbox = $(".m3 .left");
             var rightbox = $(".m3 .right");
@@ -698,9 +737,14 @@
 
         }();
 
+    !function(){
+        var ablocks = $(".m4,.m5,.zhixuan,.hovers,.m6");
+        var aLi = $(".louti li").not(".last");
 
-      
+        $.louti(ablocks,aLi,0.5);
+    }();
     </script>
+    }
 </body>
 
 </html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<a href="#" id="changeImg">
+    <canvas class="show-captcha" id="canvas" style="" width="150" height="40"></canvas>
+</a>
+<script src="./script/libs/jquery.min.js"></script>
+<script src="./script/js/reg.js"></script>
+<script>
+	!function(){
+		var box = $("#changeImg");
+		var canvas =$("#canvas").get(0);
+		var len =6;
+		console.log(canvas)
+		$.drawCode(box,canvas,len);
+	}();
+
+
+</script>
+</body>
+</html>

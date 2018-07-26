@@ -115,11 +115,8 @@ form {
   background-position: -155px -162px;
 }
 .main #codes {
-  background: #ddd;
   display: inline-block;
-  padding: 10px 7px;
   vertical-align: middle;
-  margin-right: 10px;
 }
 .main #changecode {
   display: inline-block;

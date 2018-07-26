@@ -90,7 +90,6 @@
     .wrap {
         width: 1200px;
         margin: 0 auto;
-
     }
     h3 {
         padding-left: 40px;
@@ -100,42 +99,90 @@
     }
     .left {
         width: 600px;
-    	float:left;
+        float: left;
         li {
             float: left;
             padding: 10px 14px;
             background: #fff;
             position: relative;
-            border-bottom: 1px solid #f7f7f7;;
+            border-bottom: 1px solid #f7f7f7;
+            ;
         }
-        span{
-        	border-left:1px solid #ddd;
-        	height: 40px;
-        	vertical-align: middle;
-        	display: block;
-        	position: absolute;
-        	top:20px;
-        	right: 0;
+        span {
+            border-left: 1px solid #ddd;
+            height: 40px;
+            vertical-align: middle;
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 0;
         }
     }
-    .right{
-    	width:590px;
-    	margin-left:10px;
-    	height:570px;
-    	float:left;
-
+    .right {
+        width: 590px;
+        margin-left: 10px;
+        height: 570px;
+        float: left;
     }
-    .rg_top{
-    	background-color: #e78c94;
-    	color:#fff;
-    	ul{
-    		padding-right:20px;
-    	}
-    	li{
-    		float: right;
-    		padding:10px 5px;
-    	}
+    .rg_top {
+        background-color: #e78c94;
+        color: #fff;
+        ul {
+            padding-right: 20px;
+        }
+        li {
+            float: right;
+            padding: 10px 5px;
+        }
     }
-	
+    .rg_main {
+        background: #fff;
+        li {
+            float: left;
+            padding: 0 17px;
+            img {
+                display: block;
+                width: 160px;
+                height: 160px;
+            }
+            p {
+                width: 160px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            >a {
+                padding: 16px 0;
+                display: block;
+                color: red;
+            }
+        }
+    }
+}
 
+.louti {
+    position: fixed;
+    top: 20%;
+    left: 30px;
+    background-color: #908787;
+    z-index: 300;
+    ul{
+    display:none;
+        
+    }
+    li {
+        width: 80px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-bottom: 1px solid #a19999;
+    }
+    a {
+        color: #fff;
+        display: block;
+        height: 100%;
+    }
+    .last {
+        background-color: #5d4949;
+    }
 }

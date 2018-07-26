@@ -114,7 +114,7 @@ form {
         display: none;
     }
     .right-tips {
-      
+
         /*display: inline-block;*/
         background: url("../images/login/login-bg.png") no-repeat;
         display: none;
@@ -122,17 +122,18 @@ form {
         height: 15px;
         background-position: -155px -162px;
     }
+
+   
     #codes {
-        background: #ddd;
         display: inline-block;
-        padding: 10px 7px;
         vertical-align: middle;
-        margin-right: 10px;
+
     }
     #changecode {
         display: inline-block;
         vertical-align: middle;
         font-size: 10px;
+
     }
     #agree {
         width: 20px;

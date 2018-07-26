@@ -769,5 +769,54 @@
   float: right;
   padding: 10px 5px;
 }
+.m6 .rg_main {
+  background: #fff;
+}
+.m6 .rg_main li {
+  float: left;
+  padding: 0 17px;
+}
+.m6 .rg_main li img {
+  display: block;
+  width: 160px;
+  height: 160px;
+}
+.m6 .rg_main li p {
+  width: 160px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.m6 .rg_main li > a {
+  padding: 16px 0;
+  display: block;
+  color: red;
+}
+
+.louti {
+  position: fixed;
+  top: 20%;
+  left: 30px;
+  background-color: #908787;
+  z-index: 300;
+}
+.louti ul {
+  display: none;
+}
+.louti li {
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-bottom: 1px solid #a19999;
+}
+.louti a {
+  color: #fff;
+  display: block;
+  height: 100%;
+}
+.louti .last {
+  background-color: #5d4949;
+}
 
 /*# sourceMappingURL=index.css.map */
