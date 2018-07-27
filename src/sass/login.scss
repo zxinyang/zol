@@ -36,6 +36,18 @@
 
 .main {
     margin-top: 20px;
+    .zshop_error,.seller_error{
+        position: absolute;
+        display: block;
+        width:270px;
+        height: 30px;
+        line-height: 30px;
+        font-size:14px;
+        color:red;
+        text-indent: 1em;
+        visibility: hidden;
+        top:0px;
+    }
     .login_img {
         float: left;
         a {
@@ -64,13 +76,18 @@
             font-size: 20px;
             float: left;
             width: 50%;
+            cursor: pointer;
             border-bottom: 2px solid #ddd;
             text-align: center;
             padding-top: 20px;
         }
+        h3:nth-of-type(1){
+            border-bottom: 2px solid red;
+        }
     }
     form {
-        padding-top: 20px;
+        padding-top: 30px;
+        position: relative;
     }
     input {
         width: 270px;
@@ -80,6 +97,7 @@
         margin-bottom: 15px;
         text-indent: 14px;
 
+
     }
     .submit{
         background:#db2e2e;
@@ -88,6 +106,7 @@
         height: 40px;
         color:#fff;
         margin-top:40px;
+        cursor: pointer;
     }
     .zshop{
         padding-bottom: 70px;
@@ -96,5 +115,26 @@
     .seller{
          padding-bottom: 70px;
          /*position: absolute;*/
+    }
+}
+.foot_bar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color:#ddd;
+    border-top: 1px solid #ddd;
+
+    right:0;
+    left:0;
+    padding-left:200px;
+    padding-bottom: 20px;
+    li{
+        display: inline-block;
+    }
+    a{
+        display: block;
+        height: 100%;
+        padding: 10px 20px 10px  0;
+        color:#666;
     }
 }

@@ -12,23 +12,24 @@ $barWidth:1200px;
 %ib {
     display: inline-block;
 }
+
 .top_bar {
     width: 100%;
     font: 12px/29px arial;
-    background-color:#fff;
+    background-color: #fff;
     a {
         color: #36c;
         text-decoration: none;
     }
-    .bar_one{
-        background:#f5f5f5;
+    .bar_one {
+        background: #f5f5f5;
     }
-    .mid_bar,.wrap_search{
+    .mid_bar,
+    .wrap_search {
         width: 1200px;
-        margin:0 auto;
-
+        margin: 0 auto;
     }
-    
+
     .bar_left {
         display: inline-block;
         span {
@@ -54,7 +55,7 @@ $barWidth:1200px;
     }
     .wrap_search {
         padding: 30px 0;
-        background:#fff;
+        background: #fff;
     }
     .search {
         /*display: inline-block;*/
@@ -91,7 +92,7 @@ $barWidth:1200px;
     .entry {
         float: right;
         margin-top: 9px;
-        margin-left:65px;
+        margin-left: 65px;
 
         a {
             @extend %ib;
@@ -109,6 +110,18 @@ $barWidth:1200px;
             position: relative;
             margin-top: 5px;
         }
+        .input_tips {
+            position: absolute;
+            top: 32px;
+            z-index: 2000;
+            background: #fff;
+            border: 1px solid #ddd;
+            margin-left: -18px;
+            width: 384px;
+            ul {
+                padding-left: 17px;
+            }
+        }
         form {
             width: 460px;
             height: 34px;
@@ -119,7 +132,6 @@ $barWidth:1200px;
             font-size: 16px;
         }
         a {
-
             background: #eee;
             padding: 0 4px;
             color: #666;
@@ -152,12 +164,12 @@ $barWidth:1200px;
 .entry .ico {
     position: absolute;
     background: url("../../images/head.png");
-   
+
     left: 0;
 }
 
 .cart .ico {
-	 width: 20px;
+    width: 20px;
     height: 20px;
     top: 4px;
     background-position: 0 -167px;
@@ -166,14 +178,15 @@ $barWidth:1200px;
 
 .coupon .ico {
 
-	 width: 25px;
+    width: 25px;
     height: 20px;
     top: 6px;
     background-position: 0 -190px;
 }
-.order .ico{
-	width: 20px;
+
+.order .ico {
+    width: 20px;
     height: 20px;
     top: 7px;
-	background-position: 0 -211px;
+    background-position: 0 -211px;
 }

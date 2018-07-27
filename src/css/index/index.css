@@ -245,6 +245,7 @@
   display: none;
   background-color: transparent;
   background: url("../../images/zol-home-icons.png") no-repeat;
+  cursor: pointer;
 }
 .m4 .btn_left {
   left: 126px;
@@ -521,7 +522,8 @@
 .top_bar .bar_one {
   background: #f5f5f5;
 }
-.top_bar .mid_bar, .top_bar .wrap_search {
+.top_bar .mid_bar,
+.top_bar .wrap_search {
   width: 1200px;
   margin: 0 auto;
 }
@@ -591,6 +593,18 @@
   padding: 2px 0 2px 16px;
   position: relative;
   margin-top: 5px;
+}
+.top_bar .search_box .input_tips {
+  position: absolute;
+  top: 32px;
+  z-index: 2000;
+  background: #fff;
+  border: 1px solid #ddd;
+  margin-left: -18px;
+  width: 384px;
+}
+.top_bar .search_box .input_tips ul {
+  padding-left: 17px;
 }
 .top_bar .search_box form {
   width: 460px;

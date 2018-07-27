@@ -188,6 +188,7 @@ var iform;
                     })
 
                 })
+                allInputs["phonenumber"] = false;
 
             } else {
                 $.ajax({
@@ -202,12 +203,13 @@ var iform;
                                 n.css({
                                     display: "none"
                                 })
-
                             })
+
                             hasreg.css({
                                 display: "inline"
                             })
-                            vali.invalid["phonenumber"] = false;
+                            
+                            allInputs["phonenumber"] = false;
 
                         } else {
                             $.each([hasreg, wrongtip], function(i, n) {
@@ -221,7 +223,7 @@ var iform;
                             })
 
                             $("#phonenumber").attr("class", "valid").attr("aria-invalid", "false");
-                            vali.invalid["phonenumber"] = true;
+                            allInputs["phonenumber"] = true;
 
                             return true;
                         }
@@ -240,7 +242,7 @@ var iform;
 
             })
 
-            vali.invalid["phonenumber"] = false;
+            allInputs["phonenumber"] = false;
 
 
         }
@@ -305,21 +307,26 @@ var iform;
         $form.valid();
 
         var bool = true;
+        console.log(allInputs);
         $.each(allInputs, function(k, v) {
             if (v == false) bool = false;
         })
         if (bool) {
             $.ajax({
                 type: "post",
-                asyn:true,
-                url: "http://10.31.165.18/jingdong/zol/php/checkphone.php",
+                asyn:false,
+                url: "http://10.31.165.18/jingdong/zol/php/reg.php",
                 data: {
                     "phonenumber": $("#phonenumber").val(),
-                    "password": $("#phonenumber").val()
+                    "password": $("#password").val()
                 },
                 success:function(){
-
+                	alert("注册成功");
+                	window.location.href= "http://10.31.165.18/jingdong/zol/src/login.html"
                 },
+                error:function(){
+                	
+                }
             })
         }
     })
